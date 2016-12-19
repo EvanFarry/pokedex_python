@@ -63,3 +63,17 @@ class Pokemon:
             types.append(self.json_data["types"][index]["type"]["name"])
             index = index + 1
         return types
+
+
+#------------------------------------
+# summary:      get the pokemon abilities, store in array
+# returns:      array of abilites
+# TODO:         add the is_hidden atttribute to this
+#------------------------------------
+    def get_pokemon_abilities(self):
+        ret = []
+        index = 0
+        for each in self.json_data["abilities"]:
+            ret.append(self.json_data["abilities"][index]["ability"]["name"])
+            index = index + 1
+        return ret

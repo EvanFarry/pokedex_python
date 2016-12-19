@@ -9,6 +9,8 @@ poke_id = p.get_pokemon_id()
 name = p.get_pokemon_name()
 types =  p.get_pokemon_types()
 base = p.get_pokemon_base_exp()
+ab = p.get_pokemon_abilities()
+
 
 
 if len(types) == 1:
