@@ -64,7 +64,6 @@ class Pokemon:
             index = index + 1
         return types
 
-
 #------------------------------------
 # summary:      get the pokemon abilities, store in array
 # returns:      array of abilites
@@ -75,5 +74,18 @@ class Pokemon:
         index = 0
         for each in self.json_data["abilities"]:
             ret.append(self.json_data["abilities"][index]["ability"]["name"])
+            index = index + 1
+        return ret
+
+
+#------------------------------------
+# summary:      get the list of games this pokemon appears in
+# returns:      list of games
+#------------------------------------
+    def get_pokemon_game_presence(self):
+        ret = []
+        index = 0
+        for each in self.json_data["game_indices"]:
+            ret.append(self.json_data["game_indices"][index]["version"]["name"])
             index = index + 1
         return ret
