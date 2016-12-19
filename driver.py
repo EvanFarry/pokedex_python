@@ -8,6 +8,7 @@ p = Pokemon(user_input)
 poke_id = p.get_pokemon_id()
 name = p.get_pokemon_name()
 types =  p.get_pokemon_types()
+base = p.get_pokemon_base_exp()
 
 
 if len(types) == 1:

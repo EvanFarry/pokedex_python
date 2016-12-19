@@ -29,7 +29,16 @@ class Pokemon:
 #   1. get_pokemon_name()
 #   2. get_pokemon_id()
 #   3. get_pokemon_types()
+#   4. get_pokemon_base_exp()
 #------------------------------------
+
+
+#------------------------------------
+# returns:       base experience
+#------------------------------------
+    def get_pokemon_base_exp(self):
+        return self.json_data["base_experience"]
+
 
 #------------------------------------
 # returns:       pokemon name
